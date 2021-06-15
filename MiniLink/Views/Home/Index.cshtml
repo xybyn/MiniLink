@@ -1,0 +1,14 @@
+﻿@model MiniLink.Web.Models.LinkViewModel
+<div class="wrapper-main">
+    <div class="container-main">
+        <div><h1>MiniLink</h1></div>
+        <form asp-action="Minify" asp-controller="Home" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" asp-for="Link" placeholder="Enter your link here..." aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2" asp-controller="Home" asp-action="Minify">Minify</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
